@@ -8,13 +8,11 @@ namespace ClassMetotDemo
     {
         static void Main(string[] args)
         {
-            Musteri musteri1 = new Musteri()
-            {
-                Id = 1,
-                FisrtName = "Merve",
-                LastName = "AYDIN",
-                City = "Trabzon"
-            };
+            Musteri musteri1 = new Musteri();
+            musteri1.Id = 1;
+            musteri1.FisrtName = "Merve";
+            musteri1.LastName = "AYDIN";
+            musteri1.City = "Trabzon";
 
             Musteri musteri2 = new Musteri()
             {
@@ -24,13 +22,7 @@ namespace ClassMetotDemo
                 City = "Artvin"
             };
 
-            Musteri musteri3 = new Musteri()
-            {
-                Id = 3,
-                FisrtName = "Onur",
-                LastName = "AYDIN",
-                City = "Ankara"
-            };
+            Musteri musteri3 = new Musteri{Id = 3, FisrtName = "Onur", LastName = "AYDIN", City = "Ankara"};
 
 
             MusteriManager musteriManager = new MusteriManager();

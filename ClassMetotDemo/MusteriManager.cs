@@ -11,7 +11,7 @@ namespace ClassMetotDemo
         {
             Console.WriteLine("Listed!");
         }
-        public void Add()
+        public void Add(Musteri musteri)
         {
             Console.WriteLine("Added!");
         }
