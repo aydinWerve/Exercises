@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassMetotDemo", "ClassMeto
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyDictionary", "MyDictionary\MyDictionary.csproj", "{8A8A76A9-5A1A-4611-B01C-8283B74D245A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceAndAbstractDemo", "InterfaceAndAbstractDemo\InterfaceAndAbstractDemo.csproj", "{6F277FD7-1355-4B54-8BC4-683D6C45855A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterfaceAndAbstractDemo", "InterfaceAndAbstractDemo\InterfaceAndAbstractDemo.csproj", "{6F277FD7-1355-4B54-8BC4-683D6C45855A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameProject", "GameProject\GameProject.csproj", "{1B526339-8F74-44E9-A34D-562D7CC38D29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{6F277FD7-1355-4B54-8BC4-683D6C45855A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F277FD7-1355-4B54-8BC4-683D6C45855A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F277FD7-1355-4B54-8BC4-683D6C45855A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B526339-8F74-44E9-A34D-562D7CC38D29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B526339-8F74-44E9-A34D-562D7CC38D29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B526339-8F74-44E9-A34D-562D7CC38D29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B526339-8F74-44E9-A34D-562D7CC38D29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
