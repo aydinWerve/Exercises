@@ -53,7 +53,9 @@ select CategoryID, count(*) SayiAdedi from Products where UnitPrice>20 group by 
 --UnitPrice yazınca ürün sayısı azaldı böylece 10 dan küçük olanların sayısı artmış oldu
 --inner join iki tabloda da eşleşen dataları getirir
 select * from Products inner join Categories on Products.CategoryID = Categories.CategoryID --on -> durumunda, şartında, koşul demek
-select Products.ProductID, Products.ProductName, Products.UnitPrice, Categories.CategoryName from Products inner join Categories on Products.CategoryID = Categories.CategoryID where Products.UnitPrice > 10
+
+select Products.ProductID, Products.ProductName, Products.UnitPrice, Categories.CategoryName from Products inner join Categories on
+Products.CategoryID = Categories.CategoryID where Products.UnitPrice > 10
 
 --left solda olup sağda olmayanları da getir
 select * from Products p left join [Order Details] od on p.ProductID = od.ProductID -- [Order Details] arada boşluk olduğundan dolayı köşeli parantez içine alıyor
@@ -63,5 +65,7 @@ select * from Customers c left join Orders o on c.CustomerID = o.CustomerID wher
 --iki tabloyu joinlemek
 select * from Products p left join [Order Details] od on p.ProductID = od.ProductID inner join Orders o on o.OrderID = od.OrderID
 
+
 --Her bir üründen toplamda ne kadar para kazandığımızı bulunuz.
-select ProductName,Sum(od.Quantity*od.UnitPrice) as TotalAmount from [Order Details] od inner join Products p on od.ProductID = p.ProductID inner join Orders o on od.OrderID = o.OrderID group by ProductName
+select ProductName,Sum(od.Quantity*od.UnitPrice) as TotalAmount from [Order Details] od inner join Products p on
+od.ProductID = p.ProductID inner join Orders o on od.OrderID = o.OrderID group by ProductName
